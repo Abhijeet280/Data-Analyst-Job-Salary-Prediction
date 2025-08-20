@@ -1,54 +1,59 @@
-# Data Analyst Salary Prediction
+# 💼 Data Analyst Salary Prediction
 
-This project predicts the salaries of **Data Analysts** based on job-related features such as company size, sector, location, and more. It involves **exploratory data analysis, feature engineering, and machine learning models** to estimate salaries.
+This project predicts the **salaries of Data Analysts** using **Machine Learning models**.
+It involves **data preprocessing, exploratory data analysis (EDA), encoding, scaling, and model building** with regression algorithms.
 
 ---
 
-## 📑 Dataset
+## 🚀 Project Overview
 
-The dataset (`DataAnalyst.csv`) contains job postings for **Data Analyst roles** along with company information and estimated salaries.
+The notebook performs the following steps:
 
-### Key Columns
-
-* **Job Title** – Title of the job (e.g., Data Analyst, Senior Data Analyst).
-* **Salary Estimate** – Estimated salary range from Glassdoor.
-* **Job Description** – Text describing the role and responsibilities.
-* **Rating** – Company rating (out of 5).
-* **Company Name** – Name of the employer.
-* **Location** – Job location.
-* **Headquarters** – Company headquarters.
-* **Size** – Company size (number of employees).
-* **Founded** – Year the company was founded.
-* **Type of ownership** – Ownership structure (Private, Public, Nonprofit, etc.).
-* **Industry** – Industry classification.
-* **Sector** – Business sector.
-* **Revenue** – Revenue range of the company.
-* **Competitors** – Competitor companies listed.
-* **Easy Apply** – Indicates if the job supports quick apply.
-
-## 📂 Project Workflow
-
-1. **EDA & Data Cleaning** – Handling missing values, duplicates, and irrelevant columns.
-2. **Feature Engineering** – Encoding categorical variables and scaling numerical features.
-3. **Data Analysis** – Visualizing salary trends by company size, sector, and location.
-4. **Model Development** – Implemented:
+1. **Importing Libraries** – Loading required Python libraries (pandas, numpy, sklearn, matplotlib, seaborn, etc.)
+2. **Exploratory Data Analysis (EDA)** – Analyzing salary trends across features such as company size, sector, and location.
+3. **Encoding Data** – Converting categorical features into numerical values using Label Encoding.
+4. **Scaling Data** – Normalizing features for better model performance.
+5. **Model Building** – Training machine learning models for salary prediction:
 
    * Linear Regression
    * Random Forest Regressor
-5. **Evaluation** – Performance measured with R², Adjusted R², and Mean Absolute Error (MAE).
+6. **Model Evaluation** – Comparing models using metrics such as **R² Score, Adjusted R², and MAE**.
 
 ---
 
-## 🚀 Technologies Used
+## 🛠️ Technologies Used
 
-* **Python** (NumPy, Pandas, Matplotlib, Seaborn)
-* **Scikit-learn** (Linear Regression, Random Forest, Train-Test Split, Evaluation Metrics)
+* Python
+* Pandas & NumPy
+* Matplotlib & Seaborn
+* Scikit-learn (Linear Regression, Random Forest)
+* Jupyter Notebook
 
 ---
 
-## 📊 Key Insights
+## 📂 Dataset
 
-* Top locations and company sizes significantly impact salary.
-* Random Forest performed better than Linear Regression in prediction accuracy.
+The dataset `DataAnalyst.csv` contains information about **job postings for Data Analysts**, with features such as:
+
+* **Job Title** – Title of the job (e.g., Data Analyst, Senior Data Analyst)
+* **Salary Estimate** – Estimated salary range (target variable)
+* **Rating** – Company rating out of 5
+* **Company Name** – Employer name
+* **Location** – Job location
+* **Headquarters** – Company headquarters
+* **Size** – Company size (employee count)
+* **Founded** – Year the company was founded
+* **Type of ownership** – Ownership type (Private, Public, Nonprofit, etc.)
+* **Industry** – Industry classification
+* **Sector** – Business sector
+* **Revenue** – Revenue range of the company
+
+---
+
+## 📈 Expected Insights
+
+* **Top locations and company sizes** significantly impact salaries.
+* Certain **industries and sectors** offer higher salary ranges.
+* **Random Forest Regressor** is expected to perform better than Linear Regression due to its ability to handle categorical and non-linear patterns.
 
 ---
